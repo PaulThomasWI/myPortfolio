@@ -9,7 +9,7 @@ A website showcasing my projects
 * CSS
 
 ## Website
-http://github.com/paulthomaswi/myPortfolio
+https://paulthomaswi.github.io/myPortfolio/
 
 ## Contribution
 Made with ❤ by Paul Thomas
