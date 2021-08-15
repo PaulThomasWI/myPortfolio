@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* more on this crazy alphanumerical value in a minute! */
+    color: #00674C;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  padding: 20px 35px;
+  background-color: #00674C;
+}
+
+.header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+    text-align: left;
+ }
+
+.header nav {
+    margin: 7px 0;
+}
+
+.header nav ul {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
